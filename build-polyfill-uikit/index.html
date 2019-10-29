@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+
+    <script crossorigin src="./example.host.js"></script>
+
+    <style>
+      html,
+      :root {
+        font-size: 100%;
+      }
+
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+    <title>Mortgage Calculator</title>
+  </head>
+
+  <body onload="handleOnLoad()">
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+
+    <button
+      onclick="window.handleBackClick();"
+      style="position: absolute; top: 55px;"
+    >
+      HostBack
+    </button>
+
+    <div id="root"></div>
+
+    <script
+      type="text/javascript"
+      src="./dist/module/McxCalculator.web.thick.js"
+    ></script>
+
+    <!-- Font to be provided by Host Application -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://rhmcxalvd3.mid.aib.pri:3070/@aib/font-aspira@1.0.12/dist/aib-font-aspira.css"
+    />
+  </body>
+</html>
